@@ -264,7 +264,8 @@
     #Reseaux {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        margin: 10px;
         padding: 30px;
     }
 
