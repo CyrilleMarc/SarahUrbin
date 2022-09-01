@@ -484,19 +484,23 @@
         #TitleMesMessages{
             font-size: 25px;
             padding-top: 40px;
+            text-align: center;
         }
         #TitleMaTournee{
             font-size: 25px;
             padding-top: 40px;
+            text-align: center;
         }
         #TitleMesReseaux{
             font-size: 25px;
             padding-top: 40px;
+            text-align: center;
         }
         #TitleMesCovers{
             font-size: 25px;
             padding-top: 40px;
             padding-bottom: 20px;
+            text-align: center;
         }
         #Reseaux {
         padding: 15px;
