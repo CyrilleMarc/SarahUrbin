@@ -86,7 +86,7 @@
         </div> -->
     </div>
     <div id="Messages">
-        <h3 id="TitleMesMessages">Messages d'encouragement. (source Youtube).</h3>
+        <h3 id="TitleMesMessages">Vos messages (source Youtube).</h3>
         <div>
             <marquee id="marquee" scrollamount="12">
                 <?php foreach ($messages as $message) : ?>
@@ -274,7 +274,6 @@
         align-items: center;
         justify-content: space-around;
         padding: 30px;
-
     }
 
     .fa-facebook {
@@ -499,6 +498,9 @@
             padding-top: 40px;
             padding-bottom: 20px;
         }
+        #Reseaux {
+        padding: 15px;
+    }
     }
     @media screen and (min-width: 751px) {
         #paysage{
