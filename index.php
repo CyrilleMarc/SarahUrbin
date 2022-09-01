@@ -83,9 +83,9 @@
         <div id="Videos">
             <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fchristianbouvypresse%2Fvideos%2F1450645785276306%2F&show_text=false&width=560&t=0"></iframe>
         </div>
-        <div id="Videos">
+        <!-- <div id="Videos">
             <iframe src="https://twitter.com/SarahUrbinMusic/status/941399633514856448" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        </div> -->
     </div>
     <div id="Messages">
         <h3 id="TitleMesMessages">Messages d'encouragement. (source Youtube).</h3>
@@ -98,7 +98,8 @@
             </marquee>
         </div>
     </div>
-    <h3 id="TitleMaTournee">Mes dates de tournée></h3>
+    <h3 id="TitleMaTournee">Mes dates de tournée</h3>
+    <p id ="paysage">Tournez votre téléphone pour voir les dates</p>
         <div id="Tournee">
             <table>
                 <thead>
@@ -465,7 +466,7 @@
         #LiensVideo{
             margin: 3px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
         table{
             display: none;
@@ -479,15 +480,16 @@
         }
         #TitleMaTournee{
             font-size: 35px;
-            padding-bottom: 40px;
+            padding-top: 40px;
         }
         #TitleMesReseaux{
             font-size: 35px;
-            padding-bottom: 40px;
+            padding-top: 40px;
         }
         #TitleMesCovers{
             font-size: 35px;
-            padding-bottom: 40px;
+            padding-top: 40px;
         }
     }
+    @media screen and (min-width: 200px) and (max-width: 750px) {}
 </style>
