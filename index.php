@@ -483,24 +483,24 @@
             border-color: transparent;
         }
         #TitleMesMessages{
-            font-size: 35px;
+            font-size: 25px;
             padding-top: 40px;
         }
         #TitleMaTournee{
-            font-size: 35px;
+            font-size: 25px;
             padding-top: 40px;
         }
         #TitleMesReseaux{
-            font-size: 35px;
+            font-size: 25px;
             padding-top: 40px;
         }
         #TitleMesCovers{
-            font-size: 35px;
+            font-size: 25px;
             padding-top: 40px;
             padding-bottom: 20px;
         }
     }
-    @media screen and (min-width: 751px) and (max-width: 1200px) {
+    @media screen and (min-width: 751px) {
         #paysage{
             display: none;
         }
