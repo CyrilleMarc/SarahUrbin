@@ -247,6 +247,7 @@
         width: 100%;
         color: white;
         font-family: 'Fredericka the Great', cursive;
+        text-align: center;
 
     }
 
@@ -340,7 +341,7 @@
 
     #TitleMesCovers {
         font-family: 'Fredericka the Great', cursive;
-        text-align: left;
+        text-align: center;
         color: white;
         font-size: 50px;
         opacity: 0.7;
@@ -349,7 +350,7 @@
 
     #TitleMesMessages {
         font-family: 'Fredericka the Great', cursive;
-        text-align: left;
+        text-align: center;
         color: white;
         font-size: 50px;
         opacity: 0.7;
@@ -358,7 +359,7 @@
 
     #TitleMesReseaux {
         font-family: 'Fredericka the Great', cursive;
-        text-align: left;
+        text-align: center;
         color: white;
         font-size: 50px;
         opacity: 0.7;
@@ -367,7 +368,7 @@
 
     #TitleMaTournee {
         font-family: 'Fredericka the Great', cursive;
-        text-align: left;
+        text-align: center;
         color: white;
         font-size: 50px;
         opacity: 0.7;
