@@ -14,7 +14,6 @@
     </title>
 </head>
 <header>
-    <div id="Container">
         <div id="Header">
             <div id="Logo">
                 <img id="logo" src="image/Sup.jpg">
@@ -63,7 +62,6 @@
         </div>
         <div id="Wapper">
         </div>
-    </div>
 </header>
 
 <body>
@@ -336,7 +334,7 @@
         font-family: 'Fredericka the Great', cursive;
         text-align: center;
         color: white;
-        font-size: 45px;
+        font-size: 38px;
         opacity: 0.7;
         margin: 50px;
     }
@@ -505,6 +503,9 @@
     @media screen and (min-width: 751px) and (max-width: 1200px) {
         #paysage{
             display: none;
+        }
+        #Title{
+            font-size: 2em;
         }
     }
 </style>
