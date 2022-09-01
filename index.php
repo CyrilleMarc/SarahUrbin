@@ -14,14 +14,14 @@
     </title>
 </head>
 <header>
-    <div id="Container"> 
+    <div id="Container">
         <div id="Header">
             <div id="Logo">
                 <img id="logo" src="image/Sup.jpg">
             </div>
             <div id="Title">
                 <h1>Sarah Urbin Musique & Production</h1>
-            </div>       
+            </div>
         </div>
         <!-- <div id="navigation">
             <ul>
@@ -34,19 +34,21 @@
         <div id="Tampon">
             <span class="clignote">E.P EN COURS D'ENREGISTREMENT...</span>
         </div>
-  <audio id="audio" src="./son/CaysonRenshaw.mp3"></audio>
-  <script>
-    var audio = document.getElementById("audio");
-    var Tampon = document.getElementById('Tampon');
-    function play() {
-      audio.play();
-    }
-    function stop() {
-      audio.pause();
-    }
-    Tampon.addEventListener('mouseover', play);
-    Tampon.addEventListener('mouseout', stop);
-  </script>
+        <audio id="audio" src="./son/CaysonRenshaw.mp3"></audio>
+        <script>
+            var audio = document.getElementById("audio");
+            var Tampon = document.getElementById('Tampon');
+
+            function play() {
+                audio.play();
+            }
+
+            function stop() {
+                audio.pause();
+            }
+            Tampon.addEventListener('mouseover', play);
+            Tampon.addEventListener('mouseout', stop);
+        </script>
         <div id="Intro">
             <p>La musique est un art, un art qui se doit d'être partagé.
                 Je fais de la musique pour transmettre un message d'amour et de
@@ -66,23 +68,23 @@
 
 <body>
     <div id="CoverCompo">
-    <h3 id="TitleMesCovers">Compositions & Covers</h3>
+        <h3 id="TitleMesCovers">Compositions & Covers</h3>
     </div>
     <div id="LiensVideo">
         <div id="Videos">
-            <iframe  src="https://www.youtube.com/embed/FpxdzC3J778" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/FpxdzC3J778" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="Videos">
-            <iframe  src="https://www.youtube.com/embed/j_0WQVIa7MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/j_0WQVIa7MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="Videos">
-            <iframe  src="https://www.youtube.com/embed/v3IkkseluHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/v3IkkseluHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="Videos">
             <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fchristianbouvypresse%2Fvideos%2F1450645785276306%2F&show_text=false&width=560&t=0"></iframe>
         </div>
         <div id="Videos">
-            <iframe  src="https://twitter.com/SarahUrbinMusic/status/941399633514856448" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://twitter.com/SarahUrbinMusic/status/941399633514856448" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     <div id="Messages">
@@ -96,66 +98,64 @@
             </marquee>
         </div>
     </div>
-   <h3 id="TitleMaTournée">Mes dates de tournée.
-    <div id="Tournée">
-   <table>
-<thead>
-<th>Date</th>
-<p>
-<th>Lieu</th>
-<p>
-<th>Prix</th>
-<p>
-<p>
-<th>Complet</th>
-<p>
-</thead>
-<p>
-<br />
-<tbody>
+    <h3 id="TitleMaTournee">Mes dates de tournée.
+        <div id="Tournee">
+            <table>
+                <thead>
+                    <th>Date</th>
+                    <p>
+                        <th>Lieu</th>
+                    <p>
+                        <th>Prix</th>
+                    <p>
+                    <p>
+                        <th>Complet</th>
+                    <p>
+                </thead>
+                <p>
+                    <br />
+                    <tbody>
 
-<?php include 'ShowMessages.php'; //on inclut notre fichier de connection  
-$sql = 'SELECT * FROM concert ORDER BY id DESC'; //on formule notre requete 
-foreach ($bdd->query($sql) as $row) { //on cree les lignes du tableau avec chaque valeur retournée
-echo '<tr>';
-echo'<td>' . $row['Date'] . '</td><p>';     
-echo'<td>' . $row['Lieu'] . '</td><p>';
-echo'<td>' . $row['Prix'] . '€</td><p>';
-echo'<td>' . $row['Complet'] . '</td><p>';
-echo '<td>';
-echo '<a class="btn btn-dark" href="index.php?id=' . $row['id'] . '">Voir les détails</a>';// un autre td pour le bouton d'edition
-echo '</td><p>';
-echo '</tr><p>';
-}
-?>    
-</tbody>
-<p>
-</table>
-</div>
-   </div id="Reso">
-   <h3 id="TitleMesReseaux">Mes réseaux sociaux.</h3>
-    <div id="Reseaux">
-        <a href="https://www.facebook.com/sarah.urbin" target="blank" class="fa fa-facebook"></a>
-        <a href=" https://www.instagram.com/sarahurbin/" target="blank" class="fa fa-instagram"></a>
-        <a href="https://twitter.com/SarahUrbinMusic" target="blank" class="fa fa-twitter"></a>
-        <a href="https://www.youtube.com/c/SarahUrbinSarahUrbin" target="blank" class="fa fa-youtube"></a>
-    </div>
-    <div id="Webmaster">
-    <a href="https://portfolio-cyrille-marc.netlify.app" target="blank"><span>Site réalisé par Cyrille MARC</span>
-    </div>
-    <div>
-    <object data="./BalloonPlanet - Wandering Mind.mp3 - Wandering Mind.mp3" type="audio/x-mpeg" width="0" height="0" >
-        <param name="src" value="BallonPlanet.mp3" />
-        <param name="controls" value="console" />
-        <param name="autostart" value="true" />
-        <param name="loop" value="false" />
-        <script type="text/javascript" >
-           
-                // document.write('<embed src="NOM_DE_LA_MUSIQUE.mp3" width="0" height="0" controls="console" loop="false" autostart="true" ></embed>');
-            
-        </script>
-    </object>
-</div>
+                        <?php include 'ShowMessages.php'; //on inclut notre fichier de connection  
+                        $sql = 'SELECT * FROM concert ORDER BY id DESC'; //on formule notre requete 
+                        foreach ($bdd->query($sql) as $row) { //on cree les lignes du tableau avec chaque valeur retournée
+                            echo '<tr>';
+                            echo '<td>' . $row['Date'] . '</td><p>';
+                            echo '<td>' . $row['Lieu'] . '</td><p>';
+                            echo '<td>' . $row['Prix'] . '€</td><p>';
+                            echo '<td>' . $row['Complet'] . '</td><p>';
+                            echo '<td>';
+                            echo '<a class="btn btn-dark" href="index.php?id=' . $row['id'] . '">Voir les détails</a>'; // un autre td pour le bouton d'edition
+                            echo '</td><p>';
+                            echo '</tr><p>';
+                        }
+                        ?>
+                    </tbody>
+                <p>
+            </table>
+        </div>
+        </div id="Reso">
+        <h3 id="TitleMesReseaux">Mes réseaux sociaux.</h3>
+        <div id="Reseaux">
+            <a href="https://www.facebook.com/sarah.urbin" target="blank" class="fa fa-facebook"></a>
+            <a href=" https://www.instagram.com/sarahurbin/" target="blank" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/SarahUrbinMusic" target="blank" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/c/SarahUrbinSarahUrbin" target="blank" class="fa fa-youtube"></a>
+        </div>
+        <div id="Webmaster">
+            <a href="https://portfolio-cyrille-marc.netlify.app" target="blank"><span>Site réalisé par Cyrille MARC</span>
+        </div>
+        <div>
+            <object data="./BalloonPlanet - Wandering Mind.mp3 - Wandering Mind.mp3" type="audio/x-mpeg" width="0" height="0">
+                <param name="src" value="BallonPlanet.mp3" />
+                <param name="controls" value="console" />
+                <param name="autostart" value="true" />
+                <param name="loop" value="false" />
+                <script type="text/javascript">
+                    // document.write('<embed src="NOM_DE_LA_MUSIQUE.mp3" width="0" height="0" controls="console" loop="false" autostart="true" ></embed>');
+                </script>
+            </object>
+        </div>
 </body>
 
 </html>
@@ -170,17 +170,19 @@ echo '</tr><p>';
         background-size: cover;
         background-position: center;
     }
-    #CoverCompo{ 
-       display: flex;
-       align-items: center;
-       justify-content: left;
-       
+
+    #CoverCompo {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
     }
 
-    #navigation{
+    #navigation {
         margin: 50px;
     }
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -189,11 +191,13 @@ echo '</tr><p>';
         margin-bottom: 20px;
 
     }
-    #Reso{
-        margin-bottom: 30px;;
+
+    #Reso {
+        margin-bottom: 30px;
+        ;
     }
 
-    li{
+    li {
         text-decoration: none;
         color: white;
         cursor: pointer;
@@ -205,17 +209,20 @@ echo '</tr><p>';
         letter-spacing: .1em;
 
     }
-    li:hover{
+
+    li:hover {
         border: 1px solid white;
     }
-    #Tampon{ 
-        text-align:center;
+
+    #Tampon {
+        text-align: center;
         transform: rotate(354deg);
-        margin:40px;
+        margin: 40px;
         flex: 1;
         cursor: pointer;
-        
+
     }
+
     .clignote {
         font-family: 'Fredericka the Great', cursive;
         font-size: 25px;
@@ -229,30 +236,37 @@ echo '</tr><p>';
         padding: 5px;
         margin-top: 40px;
 
-}
-    @keyframes clignote {  
-    50% { opacity: 0.4; }
-}
+    }
 
-    table{
+    @keyframes clignote {
+        50% {
+            opacity: 0.4;
+        }
+    }
+
+    table {
         width: 100%;
     }
-    th{
+
+    th {
         border: 1px solid white;
         width: 80%;
         font-size: 40px;
         padding: 20px;
     }
-    td{
+
+    td {
         font-size: 30px;
         border: 1px solid white;
         padding: 20px;
     }
-    #Tournée{
+
+    #Tournee {
         width: 100%;
         padding: 0;
         margin-bottom: 60px;
     }
+
     #Reseaux {
         display: flex;
         align-items: center;
@@ -350,7 +364,7 @@ echo '</tr><p>';
         margin: 0 60px;
     }
 
-    #TitleMaTournée{
+    #TitleMaTournee {
         font-family: 'Fredericka the Great', cursive;
         text-align: left;
         color: white;
@@ -386,11 +400,12 @@ echo '</tr><p>';
 
     }
 
-    #Videos{ 
+    #Videos {
         margin: 10px;
         height: 350px;
         opacity: 0.6;
     }
+
     #Videos:hover {
         opacity: 1;
     }
@@ -406,42 +421,52 @@ echo '</tr><p>';
         opacity: 0.7;
     }
 
-a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    letter-spacing: .1em;
-   
-}
+    a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        letter-spacing: .1em;
 
-a:hover{
-    color: red;
-    background-color: transparent;
-}
+    }
 
-#Webmaster{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    font-family: 'Rubik Maze', cursive;
-    font-size: 17px;
-}
+    a:hover {
+        color: red;
+        background-color: transparent;
+    }
 
-#Webmaster:hover{
-    letter-spacing: .2em;  
-}
+    #Webmaster {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: 'Rubik Maze', cursive;
+        font-size: 17px;
+    }
 
-#Open{
-    width: 35px;
-    height: 35px;
-    font-weight: 900;
-}
+    #Webmaster:hover {
+        letter-spacing: .2em;
+    }
 
-@media only screen and (max-width: 750px) {
-   #Header{
-     flex-direction: column;
-     padding: 30px;
-  }
-}
+    #Open {
+        width: 35px;
+        height: 35px;
+        font-weight: 900;
+    }
+
+    @media screen and (min-width: 200px) and (max-width: 750px) {
+        #Header {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+        #Title{
+            font-size: 2em;
+        }
+        #LiensVideo{
+            margin: 3px;
+        }
+        table{
+            display: none;
+        }
+    }
 </style>
