@@ -465,7 +465,7 @@
         #Header {
             display: flex;
             flex-direction: column;
-            padding: 30px;
+            padding: 5px;
         }
         #Title{
             font-size: 2em;
