@@ -99,6 +99,7 @@
         </div>
     </div>
     <h3 id="TitleMaTournee">Mes dates de tournée.
+        <h6 id="paysage">Passez en mode paysage pour les consulter></h6>
         <div id="Tournee">
             <table>
                 <thead>
@@ -453,11 +454,14 @@
         font-weight: 900;
     }
 
-    @media screen and (min-width: 200px) and (max-width: 750px) {
+    @media screen and (min-width: 480px) and (max-width: 720px) {
         #Header {
             display: flex;
             flex-direction: column;
             padding: 30px;
+        }
+        .clignote{
+            font-size: 15px;
         }
         #Title{
             font-size: 2em;
@@ -469,4 +473,12 @@
             display: none;
         }
     }
+    @media screen and (min-width: 720 px) and (max-width: 1200px) {
+        #paysage {
+            display: none;     
+        }
+        
+    }
+    @media screen and (min-width: 721px) and (max-width: 900px) {}
+    @media screen and (min-width: 901px) and (max-width: 1024) {}
 </style>
