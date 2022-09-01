@@ -471,7 +471,16 @@
         .clignote{
             border-color: transparent;
         }
-        h3{
+        #TitleMesMessages{
+            font-size: 35px;
+        }
+        #TitleMaTournee{
+            font-size: 35px;
+        }
+        #TitleMesReseaux{
+            font-size: 35px;
+        }
+        #TitleMesCovers{
             font-size: 35px;
         }
     }
