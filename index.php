@@ -247,6 +247,9 @@
 
     table {
         width: 100%;
+        color: white;
+        font-family: 'Fredericka the Great', cursive;
+
     }
 
     th {
@@ -452,6 +455,13 @@
         width: 35px;
         height: 35px;
         font-weight: 900;
+    }
+
+    #paysage{
+        font-family: 'Annie Use Your Telescope', cursive;
+        font-size: 18px;
+        color: white;
+        text-align: center;
     }
 
     @media screen and (min-width: 200px) and (max-width: 750px) {
