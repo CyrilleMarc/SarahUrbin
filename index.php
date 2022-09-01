@@ -101,9 +101,9 @@
         <div id="Tournee">
             <table>
                 <thead>
-                    <th>Date</th>
+                    <th>Lieu</th>
                     <p>
-                        <th>Lieu</th>
+                        <th>Date</th>
                     <p>
                         <th>Prix</th>
                     <p>
@@ -119,8 +119,8 @@
                         $sql = 'SELECT * FROM concert ORDER BY id DESC'; //on formule notre requete 
                         foreach ($bdd->query($sql) as $row) { //on cree les lignes du tableau avec chaque valeur retournée
                             echo '<tr>';
-                            echo '<td>' . $row['Date'] . '</td><p>';
                             echo '<td>' . $row['Lieu'] . '</td><p>';
+                            echo '<td>' . $row['Date'] . '</td><p>';
                             echo '<td>' . $row['Prix'] . '€</td><p>';
                             echo '<td>' . $row['Complet'] . '</td><p>';
                             echo '<td>';
