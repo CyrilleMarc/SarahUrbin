@@ -265,7 +265,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 20px;
         padding: 30px;
     }
 
@@ -295,7 +294,7 @@
         width: 100px;
         text-align: center;
         text-decoration: none;
-        margin: 5px 2px;
+        margin: 5px 10px;
         border: 1px solid white;
         border-radius: 10px;
     }
