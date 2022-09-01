@@ -265,7 +265,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 10px;
+        margin-left: 20px;
         padding: 30px;
     }
 
