@@ -343,11 +343,8 @@
         text-align: left;
         color: white;
         font-size: 50px;
-        margin: 3px 60px;
-    }
-
-    #TitleMesCovers:hover{
         opacity: 0.7;
+        margin: 3px 60px;
     }
 
     #TitleMesMessages {
@@ -407,11 +404,10 @@
     #Videos {
         margin: 10px;
         height: 350px;
-        opacity: 0.6;
     }
 
     #Videos:hover {
-        opacity: 1;
+        opacity: 0.6;
     }
 
     #marquee {
