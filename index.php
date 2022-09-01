@@ -343,8 +343,11 @@
         text-align: left;
         color: white;
         font-size: 50px;
-        opacity: 0.7;
         margin: 3px 60px;
+    }
+
+    #TitleMesCovers:hover{
+        opacity: 0.7;
     }
 
     #TitleMesMessages {
