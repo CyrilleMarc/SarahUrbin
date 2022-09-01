@@ -377,7 +377,7 @@
     #Header {
         display: flex;
         align-items: center;
-        margin: 0 50px;
+        margin: 40px 50px;
         justify-content: space-around;
 
     }
@@ -411,13 +411,14 @@
     }
 
     #marquee {
-        width: 100%;
+        width: 90%;
         font-family: 'Annie Use Your Telescope', cursive;
         letter-spacing: .1em;
         color: white;
         text-shadow: 0.1em 0.1em 0.2em black;
         font-size: 30px;
         margin-bottom: 50px;
+        margin-left: 5%;
         opacity: 0.7;
     }
 
