@@ -457,7 +457,7 @@
         #Header {
             display: flex;
             flex-direction: column;
-            padding: 5px;
+            padding: 2px;
         }
         #Title{
             font-size: 2em;
@@ -496,7 +496,12 @@
         }
         #Reseaux {
         padding: 15px;
+        }
+        .fa {
+        margin: 5px 6px;
+      
     }
+
     }
     @media screen and (min-width: 751px) {
         #paysage{
