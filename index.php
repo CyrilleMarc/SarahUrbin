@@ -464,6 +464,8 @@
         }
         #LiensVideo{
             margin: 3px;
+            display: flex;
+            flex-direction: row;
         }
         table{
             display: none;
@@ -473,15 +475,19 @@
         }
         #TitleMesMessages{
             font-size: 35px;
+            padding-bottom: 40px;
         }
         #TitleMaTournee{
             font-size: 35px;
+            padding-bottom: 40px;
         }
         #TitleMesReseaux{
             font-size: 35px;
+            padding-bottom: 40px;
         }
         #TitleMesCovers{
             font-size: 35px;
+            padding-bottom: 40px;
         }
     }
 </style>
