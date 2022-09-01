@@ -98,7 +98,7 @@
             </marquee>
         </div>
     </div>
-    <h3 id="TitleMaTournee">Mes dates de tournée.
+    <h3 id="TitleMaTournee">Mes dates de tournée></h3>
         <div id="Tournee">
             <table>
                 <thead>
@@ -467,6 +467,12 @@
         }
         table{
             display: none;
+        }
+        .clignote{
+            border-color: transparent;
+        }
+        h3{
+            font-size: 35px;
         }
     }
 </style>
