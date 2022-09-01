@@ -65,9 +65,7 @@
 </header>
 
 <body>
-    <div id="CoverCompo">
         <h3 id="TitleMesCovers">Compositions & Covers</h3>
-    </div>
     <div id="LiensVideo">
         <div id="Videos">
             <iframe src="https://www.youtube.com/embed/FpxdzC3J778" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -168,13 +166,6 @@
         background-image: url('image/priscilla-du-preez-AW1vLlH39Ww-unsplash.jpg');
         background-size: cover;
         background-position: center;
-    }
-
-    #CoverCompo {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-
     }
 
     #navigation {
