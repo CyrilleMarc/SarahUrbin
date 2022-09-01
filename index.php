@@ -453,6 +453,12 @@
         text-align: center;
     }
 
+
+    /* De 480 à 720 px pour les téléphones mobiles.
+De 768 à 900 px pour les tablettes en mode portrait.
+De 900 à 1024 px pour les tablettes en mode paysage.
+De 1024 à 1200 px pour un ordinateur fixe ou portable. */
+
     @media screen and (min-width: 200px) and (max-width: 750px) {
         #Header {
             display: flex;
@@ -497,8 +503,9 @@
         #Reseaux {
         padding: 15px;
         }
+
         .fa {
-        margin: 5px 6px;
+        margin: 4px 4px;
       
     }
 
@@ -511,4 +518,6 @@
             font-size: 2em;
         }
     }
+
+
 </style>
