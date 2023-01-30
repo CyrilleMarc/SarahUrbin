@@ -1,4 +1,4 @@
-<?php require_once 'ShowMessages.php' ?>
+<!-- <?php require_once 'ShowMessages.php' ?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +67,7 @@
 <body>
         <h3 id="TitleMesCovers">Compositions & Covers</h3>
     <div id="LiensVideo">
-        <div id="Videos">
+        <!-- <div id="Videos">
             <iframe src="https://www.youtube.com/embed/FpxdzC3J778" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="Videos">
@@ -75,7 +75,7 @@
         </div>
         <div id="Videos">
             <iframe src="https://www.youtube.com/embed/v3IkkseluHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        </div> -->
         <div id="Videos">
             <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fchristianbouvypresse%2Fvideos%2F1450645785276306%2F&show_text=false&width=560&t=0"></iframe>
         </div>
@@ -83,7 +83,7 @@
             <iframe src="https://twitter.com/SarahUrbinMusic/status/941399633514856448" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div> -->
     </div>
-    <div id="Messages">
+    <!-- <div id="Messages">
         <h3 id="TitleMesMessages">Vos messages (source Youtube).</h3>
         <div>
             <marquee id="marquee" scrollamount="12">
@@ -93,7 +93,7 @@
                 <?php endforeach; ?>
             </marquee>
         </div>
-    </div>
+    </div> -->
     <h3 id="TitleMaTournee">Mes dates de tournée</h3>
     <p id ="paysage">Tournez votre téléphone pour voir les dates</p>
         <div id="Tournee">
@@ -113,7 +113,7 @@
                     <br />
                     <tbody>
 
-                        <?php include 'ShowMessages.php'; //on inclut notre fichier de connection  
+                        <!-- <?php include 'ShowMessages.php'; //on inclut notre fichier de connection  
                         $sql = 'SELECT * FROM concert ORDER BY id DESC'; //on formule notre requete 
                         foreach ($bdd->query($sql) as $row) { //on cree les lignes du tableau avec chaque valeur retournée
                             echo '<tr>';
@@ -126,7 +126,7 @@
                             echo '</td><p>';
                             echo '</tr><p>';
                         }
-                        ?>
+                        ?> -->
                     </tbody>
                 <p>
             </table>
